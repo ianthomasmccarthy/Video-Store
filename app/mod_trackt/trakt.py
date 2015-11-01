@@ -11,7 +11,7 @@ class Auth:
     def __init__(self, user, __pword):
         self.user = user
         self.__pword = __pword
-        self.url = 'https://mtjira.searshc.com/jira/rest/auth/1/session'
+        self.url = ''
         self.cookie_key = 'JSESSIONID'
         self.cookie = ''
         self.authenticate()
@@ -39,7 +39,7 @@ class Rest:
     def __init__(self, user, __pword):
         self.user     = user
         self.__pword  = __pword
-        self.base_url = 'https://mtjira.searshc.com/jira/rest/api/2/'
+        self.base_url = ''
 
     def get(self, uri):
         url = self.base_url + uri
